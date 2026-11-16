@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VD Spike</title>
+    <style>
+        body { font-family: sans-serif; padding: 16px; }
+        .ad { width: 300px; height: 100px; background: #c00; color: #fff;
+              display: flex; align-items: center; justify-content: center; }
+    </style>
+</head>
+<body>
+<h2>WebView capability spike</h2>
+
+<div id="ad-banner" class="ad">AD BANNER (cosmetic filter should hide this)</div>
+
+<p>
+    <video id="v" width="480" height="270" controls muted playsinline>
+        <source src="https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8" type="application/x-mpegURL">
+    </video>
+</p>
+
+<p>
+    <button onclick="window.open('https://example.com/','_blank')">
+        Open popup (should be blocked)
+    </button>
+</p>
+
+<script>
+    var v = document.getElementById('v');
+    v.load();
+    var p = v.play();
+    if (p && p.catch) { p.catch(function () {}); }
+
+    // Fire an ad beacon so the network-layer blocker can be observed.
+    var ad = new Image();
+    ad.src = "https://pagead2.googlesyndication.com/pagead/pixel?spike=1";
+    document.body.appendChild(ad);
+
+    // Fire a popup automatically shortly after load so the spike can observe blocking.
+    setTimeout(function () {
+        try { window.open('https://example.com/popup', '_blank'); } catch (e) {}
+    }, 2500);
+</script>
+</body>
+</html>

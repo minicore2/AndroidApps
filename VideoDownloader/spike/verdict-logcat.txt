@@ -1,0 +1,17 @@
+--------- beginning of main
+11-15 01:36:32.423 13694 13694 I VD_SPIKE: document-start cosmetic + window.open override registered
+11-15 01:36:32.439 13694 13694 I VD_SPIKE: loading spike.html
+11-15 01:36:33.114 13694 13694 I VD_SPIKE: BLOCKED ad request: https://pagead2.googlesyndication.com/pagead/pixel?spike=1
+11-15 01:36:34.282 13694 13694 I VD_SPIKE: MEDIA DETECTED: https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+11-15 01:36:34.288 13694 13694 I VD_SPIKE: REMUX start <- https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8 -> spike_out_1794677794288.mp4
+11-15 01:36:34.988 13694 13694 I VD_SPIKE: MEDIA DETECTED: https://test-streams.mux.dev/x36xhzz/url_2/193039199_mp4_h264_aac_ld_7.m3u8
+11-15 01:36:34.989 13694 13694 I VD_SPIKE: MEDIA DETECTED: https://test-streams.mux.dev/x36xhzz/url_2/url_526/193039199_mp4_h264_aac_ld_7.ts
+11-15 01:36:34.989 13694 13694 I VD_SPIKE: MEDIA DETECTED: https://test-streams.mux.dev/x36xhzz/url_0/193039199_mp4_h264_aac_hd_7.m3u8
+11-15 01:36:34.989 13694 13694 I VD_SPIKE: MEDIA DETECTED: https://test-streams.mux.dev/x36xhzz/url_0/url_463/193039199_mp4_h264_aac_hd_7.ts
+11-15 01:36:35.565 13694 13694 I VD_SPIKE: POPUP BLOCKED (JS window.open override)
+11-15 01:36:35.716 13694 13694 I VD_SPIKE: MEDIA DETECTED: https://test-streams.mux.dev/x36xhzz/url_8/193039199_mp4_h264_aac_fhd_7.m3u8
+11-15 01:36:36.248 13694 13694 I VD_SPIKE: REMUX COMPLETED: /data/user/0/com.videodownloader.spike/files/spike_out_1794677794288.mp4 size=1409863
+11-15 01:36:50.669 13694 13694 I VD_SPIKE: MEDIA DETECTED: https://test-streams.mux.dev/x36xhzz/url_8/url_592/193039199_mp4_h264_aac_fhd_7.ts
+11-15 01:37:00.572 13694 13694 I VD_SPIKE: MEDIA DETECTED: https://test-streams.mux.dev/x36xhzz/url_8/url_593/193039199_mp4_h264_aac_fhd_7.ts
+11-15 01:37:10.990 13694 13694 I VD_SPIKE: MEDIA DETECTED: https://test-streams.mux.dev/x36xhzz/url_8/url_594/193039199_mp4_h264_aac_fhd_7.ts
+11-15 01:37:22.783 13694 13694 I VD_SPIKE: MEDIA DETECTED: https://test-streams.mux.dev/x36xhzz/url_8/url_595/193039199_mp4_h264_aac_fhd_7.ts
